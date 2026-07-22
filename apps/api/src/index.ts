@@ -1,0 +1,1 @@
+function api(a: any) {}

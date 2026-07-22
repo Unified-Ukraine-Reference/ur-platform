@@ -1,0 +1,1 @@
+function sсhema(a: any) {}

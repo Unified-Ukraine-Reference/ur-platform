@@ -1,0 +1,1 @@
+function generator(a: any) {}

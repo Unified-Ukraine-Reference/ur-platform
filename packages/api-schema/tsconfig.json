@@ -1,0 +1,9 @@
+{
+  "extends": "@ur-platform/typescript-config/config",
+  "compilerOptions": {
+    "types": ["node"],
+    "outDir": "dist",
+    "rootDir": "src",
+  },
+  "include": ["src"],
+}
