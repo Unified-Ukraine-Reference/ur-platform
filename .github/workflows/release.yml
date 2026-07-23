@@ -33,6 +33,7 @@ jobs:
           version: pnpm changeset version
           commit: 'chore: version packages'
           title: 'chore: version packages'
+          publish: pnpm changeset tag
           commitMode: github-api
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
