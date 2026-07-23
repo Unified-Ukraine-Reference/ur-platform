@@ -1,5 +1,16 @@
 # @ur-platform/api-seed
 
+## 0.1.0
+
+### Minor Changes
+
+- a9d52d7: Tessssst
+
+### Patch Changes
+
+- Updated dependencies [a9d52d7]
+  - @ur-platform/api-generator@0.4.0
+
 ## 0.0.3
 
 ### Patch Changes
