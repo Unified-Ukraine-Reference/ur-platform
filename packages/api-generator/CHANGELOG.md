@@ -1,5 +1,11 @@
 # @ur-platform/api-generator
 
+## 0.4.0
+
+### Minor Changes
+
+- a9d52d7: Tessssst
+
 ## 0.3.3
 
 ### Patch Changes
