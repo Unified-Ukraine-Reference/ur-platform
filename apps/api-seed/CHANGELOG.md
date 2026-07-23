@@ -1,5 +1,13 @@
 # @ur-platform/api-seed
 
+## 0.0.3
+
+### Patch Changes
+
+- 062d10b: Testing publishing
+- Updated dependencies [062d10b]
+  - @ur-platform/api-generator@0.3.3
+
 ## 0.0.2
 
 ### Patch Changes

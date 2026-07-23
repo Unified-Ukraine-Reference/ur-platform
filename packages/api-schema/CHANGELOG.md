@@ -1,5 +1,11 @@
 # @ur-platform/api-schema
 
+## 0.0.3
+
+### Patch Changes
+
+- 062d10b: Testing publishing
+
 ## 0.0.2
 
 ### Patch Changes
