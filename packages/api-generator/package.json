@@ -2,7 +2,7 @@
   "name": "@ur-platform/api-generator",
   "version": "0.3.3",
   "type": "module",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "eslint .",
     "build": "tsdown",
