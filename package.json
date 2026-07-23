@@ -5,6 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "seed": "turbo run seed",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",

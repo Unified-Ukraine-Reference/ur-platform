@@ -1,1 +1,0 @@
-function seed(a: any) {}
