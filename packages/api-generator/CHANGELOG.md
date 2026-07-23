@@ -1,5 +1,11 @@
 # @ur-platform/api-generator
 
+## 0.3.3
+
+### Patch Changes
+
+- 062d10b: Testing publishing
+
 ## 0.0.2
 
 ### Patch Changes
