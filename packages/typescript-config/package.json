@@ -1,0 +1,7 @@
+{
+  "name": "@bun-monorepo-template/typescript-config",
+  "private": true,
+  "files": [
+    "*.json"
+  ]
+}

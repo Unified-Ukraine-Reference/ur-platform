@@ -1,0 +1,9 @@
+{
+  "extends": "@bun-monorepo-template/typescript-config/config",
+  "compilerOptions": {
+    "types": ["bun"],
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}

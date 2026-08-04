@@ -1,0 +1,13 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "env": ["GITHUB_TOKEN"],
+      "outputs": ["dist/**"]
+    }
+  }
+}

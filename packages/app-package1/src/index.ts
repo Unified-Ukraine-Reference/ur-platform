@@ -1,0 +1,1 @@
+function apiGenerator(opt: any) {}

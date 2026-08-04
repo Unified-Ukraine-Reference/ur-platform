@@ -1,0 +1,1 @@
+function apiSeed(opt: any) {}
