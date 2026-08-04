@@ -1,6 +1,6 @@
 {
-  "name": "@bun-monorepo-template/app-package1",
-  "version": "0.0.1",
+  "name": "@ur-platform/app-generator",
+  "version": "0.0.0",
   "private": false,
   "type": "module",
   "scripts": {
@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@types/bun": "1.3.14",
-    "@bun-monorepo-template/eslint-config": "workspace:*",
-    "@bun-monorepo-template/typescript-config": "workspace:*",
+    "@ur-platform/eslint-config": "workspace:*",
+    "@ur-platform/typescript-config": "workspace:*",
     "tsdown": "^0.22.14",
     "typescript": "6.0.3"
   },

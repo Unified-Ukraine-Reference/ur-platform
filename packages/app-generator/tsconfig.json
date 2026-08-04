@@ -1,5 +1,5 @@
 {
-  "extends": "@bun-monorepo-template/typescript-config/config",
+  "extends": "@ur-platform/typescript-config/config",
   "compilerOptions": {
     "types": ["bun"],
     "outDir": "dist",
