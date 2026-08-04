@@ -1,5 +1,5 @@
 {
-  "name": "@bun-monorepo-template/eslint-config",
+  "name": "@ur-platform/eslint-config",
   "private": true,
   "main": "config.mjs",
   "exports": {

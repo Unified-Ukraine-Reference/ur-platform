@@ -1,5 +1,5 @@
 {
-  "name": "bun-monorepo-template",
+  "name": "ur-platform",
   "type": "module",
   "private": true,
   "scripts": {

@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "bun-monorepo-template",
+      "name": "ur-platform",
       "devDependencies": {
         "@changesets/cli": "^2.31.1",
         "eslint": "^10.8.0",
@@ -12,48 +12,22 @@
         "typescript": "6.0.3",
       },
     },
-    "apps/app1": {
-      "name": "@bun-monorepo-template/app1",
+    "packages/app-generator": {
+      "name": "@ur-platform/app-generator",
+      "version": "0.0.0",
       "dependencies": {
         "csv-parse": "^7.0.1",
       },
       "devDependencies": {
-        "@bun-monorepo-template/eslint-config": "*",
-        "@bun-monorepo-template/typescript-config": "*",
         "@types/bun": "1.3.14",
-        "tsdown": "^0.22.14",
-        "typescript": "6.0.3",
-      },
-    },
-    "apps/app2": {
-      "name": "@bun-monorepo-template/app2",
-      "dependencies": {
-        "csv-parse": "^7.0.1",
-      },
-      "devDependencies": {
-        "@bun-monorepo-template/eslint-config": "*",
-        "@bun-monorepo-template/typescript-config": "*",
-        "@types/bun": "1.3.14",
-        "tsdown": "^0.22.14",
-        "typescript": "6.0.3",
-      },
-    },
-    "packages/app-package1": {
-      "name": "@bun-monorepo-template/app-package1",
-      "dependencies": {
-        "csv-parse": "^7.0.1",
-      },
-      "devDependencies": {
-        "@bun-monorepo-template/eslint-config": "*",
-        "@bun-monorepo-template/typescript-config": "*",
-        "@types/bun": "1.3.14",
+        "@ur-platform/eslint-config": "workspace:*",
+        "@ur-platform/typescript-config": "workspace:*",
         "tsdown": "^0.22.14",
         "typescript": "6.0.3",
       },
     },
     "packages/eslint-config": {
-      "name": "@bun-monorepo-template/eslint-config",
-      "version": "0.0.0",
+      "name": "@ur-platform/eslint-config",
       "devDependencies": {
         "@eslint/js": "^10.0.1",
         "eslint": "^10.7.0",
@@ -65,21 +39,11 @@
       },
     },
     "packages/typescript-config": {
-      "name": "@bun-monorepo-template/typescript-config",
+      "name": "@ur-platform/typescript-config",
     },
   },
   "packages": {
     "@babel/runtime": ["@babel/runtime@7.29.7", "", {}, "sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw=="],
-
-    "@bun-monorepo-template/app-package1": ["@bun-monorepo-template/app-package1@workspace:packages/app-package1"],
-
-    "@bun-monorepo-template/app1": ["@bun-monorepo-template/app1@workspace:apps/app1"],
-
-    "@bun-monorepo-template/app2": ["@bun-monorepo-template/app2@workspace:apps/app2"],
-
-    "@bun-monorepo-template/eslint-config": ["@bun-monorepo-template/eslint-config@workspace:packages/eslint-config"],
-
-    "@bun-monorepo-template/typescript-config": ["@bun-monorepo-template/typescript-config@workspace:packages/typescript-config"],
 
     "@changesets/apply-release-plan": ["@changesets/apply-release-plan@7.1.1", "", { "dependencies": { "@changesets/config": "^3.1.4", "@changesets/get-version-range-type": "^0.4.0", "@changesets/git": "^3.0.4", "@changesets/should-skip-package": "^0.1.2", "@changesets/types": "^6.1.0", "@manypkg/get-packages": "^1.1.3", "detect-indent": "^6.0.0", "fs-extra": "^7.0.1", "lodash.startcase": "^4.4.0", "outdent": "^0.5.0", "prettier": "^2.7.1", "resolve-from": "^5.0.0", "semver": "^7.5.3" } }, "sha512-9qPCm/rLx/xoOFXIHGB229+4GOL76S4MC+7tyOuTsR6+1jYlfFDQORdvwR5hDA6y4FL2BPt3qpbcQIS+dW85LA=="],
 
@@ -230,6 +194,12 @@
     "@typescript-eslint/utils": ["@typescript-eslint/utils@8.66.0", "", { "dependencies": { "@eslint-community/eslint-utils": "^4.9.1", "@typescript-eslint/scope-manager": "8.66.0", "@typescript-eslint/types": "8.66.0", "@typescript-eslint/typescript-estree": "8.66.0" }, "peerDependencies": { "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0", "typescript": ">=4.8.4 <6.1.0" } }, "sha512-jasearZPolBw5NJNYGMwxzHMF83niVWmMU1VdHzG1CyfI2VS7f7nZltnKtHcg20hW+7Uo5GfK4MeDPoU3qI8EA=="],
 
     "@typescript-eslint/visitor-keys": ["@typescript-eslint/visitor-keys@8.66.0", "", { "dependencies": { "@typescript-eslint/types": "8.66.0", "eslint-visitor-keys": "^5.0.0" } }, "sha512-dkKR8q+lKciskj1Y3vthHktl+3cMLWGyVUP23bRiPZ5O9BRT++4EqDDV+TVeIKBL1VXVEqrJlz8MYbcnvJcAlg=="],
+
+    "@ur-platform/app-generator": ["@ur-platform/app-generator@workspace:packages/app-generator"],
+
+    "@ur-platform/eslint-config": ["@ur-platform/eslint-config@workspace:packages/eslint-config"],
+
+    "@ur-platform/typescript-config": ["@ur-platform/typescript-config@workspace:packages/typescript-config"],
 
     "@yuku-codegen/binding-android-arm64": ["@yuku-codegen/binding-android-arm64@0.8.3", "", { "os": "android", "cpu": "arm64" }, "sha512-/EKnnqwvN7xYoVDhQEIEJTdPDwGW1wkFz/2Eku3ES/IJd4lcQh/OaIDFBmoJKvpe12enrb1TIoYh1fxasGXolA=="],
 
