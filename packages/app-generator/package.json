@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsdown",
+    "example": "node ./examples/usage.mjs",
     "prepublishOnly": "bun run build",
     "dev": "tsdown --watch"
   },
