@@ -2,7 +2,7 @@ import { defineConfig } from 'drizzle-kit';
 
 const DATABASE_URL = process.env['DATABASE_URL'];
 if (!DATABASE_URL) {
-  throw new Error('Database Url is required. Provide options.token or set DATABASE_URL.');
+  throw new Error('DATABASE_URL is required. Set DATABASE_URL in the environment.');
 }
 
 export default defineConfig({
