@@ -4,7 +4,7 @@ import { capitalizeWords } from './utils';
 
 export function isWordBoundary(prevChar: string | undefined): boolean {
   if (prevChar === undefined) return true;
-  return !/[а-щьюяіїєґa-z0-9]/i.test(prevChar);
+  return !/[а-щьюяіїєґa-z0-9’]/i.test(prevChar);
 }
 
 export function transliterate(input: string): string {
