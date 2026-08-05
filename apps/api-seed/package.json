@@ -1,6 +1,6 @@
 {
   "name": "@ur-platform/api-seed",
-  "version": "0.1.9",
+  "version": "0.1.0",
   "private": false,
   "type": "module",
   "scripts": {
