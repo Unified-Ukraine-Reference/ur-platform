@@ -1,11 +1,12 @@
 {
   "name": "@ur-platform/app-generator",
-  "version": "0.1.0",
+  "version": "0.3.1",
   "private": false,
   "type": "module",
   "scripts": {
     "lint": "eslint .",
     "build": "tsdown",
+    "example": "node ./examples/usage.mjs",
     "prepublishOnly": "bun run build",
     "dev": "tsdown --watch"
   },

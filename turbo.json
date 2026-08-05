@@ -8,6 +8,11 @@
       "dependsOn": ["^build"],
       "env": ["GITHUB_TOKEN"],
       "outputs": ["dist/**"]
+    },
+    "example": {
+      "dependsOn": ["build"],
+      "env": ["DATABASE_URL", "GITHUB_TOKEN", "GITHUB_OWNER", "GITHUB_REPO", "GITHUB_TAG"],
+      "cache": false
     }
   }
 }
