@@ -9,7 +9,7 @@ export class GithubDataClient {
   private readonly tag: string;
 
   constructor(opt: GithubDataClientOptions = {}) {
-    const token = opt.token;
+    const token = opt.token ?? process.env['GITHUB_TOKEN'];
 
     if (!token) {
       throw new Error('GitHub token is required. Provide options.token or set GITHUB_TOKEN.');

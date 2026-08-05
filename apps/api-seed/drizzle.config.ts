@@ -1,14 +1,15 @@
 import { defineConfig } from 'drizzle-kit';
-import { join } from 'node:path';
-import { config } from 'dotenv';
 
-config({ path: join(process.cwd(), '.env.local') });
+const DATABASE_URL = process.env['DATABASE_URL'];
+if (!DATABASE_URL) {
+  throw new Error('Database Url is required. Provide options.token or set DATABASE_URL.');
+}
 
 export default defineConfig({
   out: './migrations',
   schema: './src/db/schema.ts',
   dialect: 'postgresql',
   dbCredentials: {
-    url: process.env.DATABASE_URL!,
+    url: DATABASE_URL,
   },
 });

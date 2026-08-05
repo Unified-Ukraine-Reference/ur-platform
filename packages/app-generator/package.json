@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsdown",
-    "example": "node ./examples/usage.mjs",
+    "example": "bun ./examples/usage.mjs",
     "prepublishOnly": "bun run build",
     "dev": "tsdown --watch"
   },
@@ -14,6 +14,7 @@
     "@types/bun": "1.3.14",
     "@ur-platform/eslint-config": "workspace:*",
     "@ur-platform/typescript-config": "workspace:*",
+    "@ur-platform/env-config": "workspace:*",
     "tsdown": "^0.22.14",
     "typescript": "6.0.3"
   },

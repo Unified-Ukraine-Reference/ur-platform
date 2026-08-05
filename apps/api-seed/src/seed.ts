@@ -1,8 +1,4 @@
 import { sql } from 'drizzle-orm';
-import { join } from 'node:path';
-import { config } from 'dotenv';
-
-void config({ path: join(process.cwd(), '.env.local') });
 
 import type { IndexColumn, PgTable, PgUpdateSetSource } from 'drizzle-orm/pg-core';
 

@@ -1,9 +1,5 @@
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { Pool } from 'pg';
-import { join } from 'node:path';
-import { config } from 'dotenv';
-
-void config({ path: join(process.cwd(), '.env.local') });
 
 const DATABASE_URL = process.env['DATABASE_URL'];
 if (!DATABASE_URL) {

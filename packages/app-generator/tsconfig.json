@@ -1,9 +1,8 @@
 {
   "extends": "@ur-platform/typescript-config/config",
   "compilerOptions": {
-    "types": ["bun"],
-    "outDir": "dist",
-    "rootDir": "src"
+    "types": ["bun", "env-config"],
+    "typeRoots": ["./node_modules/@types", "./node_modules/@ur-platform"]
   },
-  "include": ["src"]
+  "include": ["src", "*.config.ts"]
 }
