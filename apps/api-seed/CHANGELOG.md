@@ -1,0 +1,7 @@
+# @ur-platform/api-seed
+
+## 0.2.0
+
+### Minor Changes
+
+- 1374934: Migrated all code and history from the [previous api-seed repository](https://github.com/Unified-Ukraine-Reference/api-seed) into this monorepo. Package version was set manually to match the version from the previous repository.
